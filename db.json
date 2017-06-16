@@ -1,19 +1,27 @@
 {
     "users": [{
-        "booked_seat": {
-            "seat_number": 13,
-            "train_id": 1
+            "booked_seat": {
+                "seat_number": 13,
+                "train_id": 1
+            },
+            "name": "john doe",
+            "id": 1,
+            "type": "user"
+        }, {
+            "booked_seat": {
+                "seat_number": 14,
+                "train_id": 1
+            },
+            "name": "jane doe",
+            "id": 2,
+            "type": "user"
         },
-        "name": "john doe",
-        "id": 1
-    }, {
-        "booked_seat": {
-            "seat_number": 14,
-            "train_id": 1
-        },
-        "name": "jane doe",
-        "id": 2
-    }],
+        {
+            "name": "kelvin theguy",
+            "id": 3,
+            "type": "staff"
+        }
+    ],
     "trains": [{
         "id": "1",
         "name": "train 1",
