@@ -9,19 +9,22 @@ class BookTrain(object):
     def __init__(self, data):
         super(BookTrain, self).__init__()
         self.data = data
+        self.get_user_details()
 
-    def user_details():
-		while(1):
-			option = 0
-			print("Select option:")
-			print(1,"Available seats")
-			print(2,"Book seat")
-
-		if (option == 1):
-			name = input("Enter name:")
-			Id = input("Enter ID number:")
-			phone = input("Enter phone number:")
-		else:
+    def get_user_details(self):
+        option = 0
+        print("Select option:")
+        print(1,"Available seats")
+        print(2,"Book seat")
+        choice = input("enter choice: ")
+        if choice == 1:
+            name = input("Enter name: ")
+            if name != "" :
+                Id = input("Enter ID number: ")
+            if Id:
+                phone = input("Enter phone number: ")
+        else:
+            print("please enter a valid choice")
 
     def write(self):
         with open('db.json', 'w') as write_file:
