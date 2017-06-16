@@ -1,51 +1,42 @@
 {
-	"trains": [{
-		"id": "1",
-		"name": "train 1",
-		"classes": [{
-				"type": "Economy",
-				"available_seats": [120, 85, 90, 100],
-				"booked_seats": [{
-						"user": "1",
-						"seat_number": 13
-					},
-					{
-						"user": "2",
-						"seat_number": 14
-					}
-				]
-			},
-			{
-				"type": "VIP",
-				"available_seats": [22, 30, 10, 3, 7],
-				"booked_seats": [{
-						"user": "1",
-						"seat_number": 2
-					},
-					{
-						"user": "2",
-						"seat_number": 4
-					}
-				]
-			}
-		]
-
-	}],
-	"users": [{
-			"id": 1,
-			"name": "john doe",
-			"booked_seat": {
-				"train_id": 1,
-				"seat_number": 13
-			}
-		},
-		{
-			"id": 2,
-			"name": "jane doe",
-			"booked_seat": {
-				"train_id": 1,
-				"seat_number": 14
-			}
-		}
-	]
+    "users": [{
+        "booked_seat": {
+            "seat_number": 13,
+            "train_id": 1
+        },
+        "name": "john doe",
+        "id": 1
+    }, {
+        "booked_seat": {
+            "seat_number": 14,
+            "train_id": 1
+        },
+        "name": "jane doe",
+        "id": 2
+    }],
+    "trains": [{
+        "id": "1",
+        "name": "train 1",
+        "classes": [{
+            "type": "Economy",
+            "available_seats": [120, 85, 90, 100],
+            "booked_seats": [{
+                "seat_number": 13,
+                "user": "1"
+            }, {
+                "seat_number": 14,
+                "user": "2"
+            }]
+        }, {
+            "type": "VIP",
+            "available_seats": [22, 30, 10, 3, 7],
+            "booked_seats": [{
+                "seat_number": 2,
+                "user": "1"
+            }, {
+                "seat_number": 4,
+                "user": "2"
+            }]
+        }]
+    }]
 }
